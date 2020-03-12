@@ -35,11 +35,6 @@ public class Main {
      * @param arg are the arguments from the main function as described in the manuals.
      */
     public static void main(String[] arg) {
-        arg = new String[3];
-        arg[0] = "../ext/small_graph.graphml";
-        arg[1] = "--all";
-        arg[2] = "../ext/output.graphml";
-
         try {
             if (arg.length > 0) {
                 boolean doesFileExist = new File(arg[0]).exists();

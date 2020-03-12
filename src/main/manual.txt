@@ -1,5 +1,5 @@
 
-COMMAND:        java -jar UASFRAJavaProjekt.jar [INPUT-FILE] [OPTION] [NODE] [NODE] [OUTPUT-FILE]
+COMMAND:        java main/Main [INPUT-FILE] [OPTION] [NODE] [NODE] [OUTPUT-FILE]
 INPUT-FILE:     A file whose format is: .graphml
 OPTION:         -s, --shortestpath -> Shortest path calculation between [NODE] and [NODE] according to the Dijkstra algorithm
                 -b, --betweenness  -> The betweenness centrality measure for the given [NODE]
@@ -7,11 +7,11 @@ OPTION:         -s, --shortestpath -> Shortest path calculation between [NODE] a
 NODE:           The ID of the node such as n3 for node 3 or n7 for node 7 as expressed in the input XML file.
                 Make sure that the node exists in the graph. Otherwise, an "Node not found" message will appear.
 OUTPUT-FILE:    A file whose format is: .graphml
-OPTION USAGE:   [--shortestpath]   -> java -jar UASFRAJavaProjekt.jar [INPUT-FILE] -s [NODE] [NODE]
-                [--betweenness]    -> java -jar UASFRAJavaProjekt.jar [INPUT-FILE] -b [NODE]
-                [--all]            -> java -jar UASFRAJavaProjekt.jar [INPUT-FILE] -a [OUTPUT-FILE]
-EXAMPLE1:       java -jar UASFRAJavaProjekt.jar myxml.graphml -s n3 n7 -> Returns the shortest path between node n3 and n7
+OPTION USAGE:   [--shortestpath]   -> java main/Main [INPUT-FILE] -s [NODE] [NODE]
+                [--betweenness]    -> java main/Main [INPUT-FILE] -b [NODE]
+                [--all]            -> java main/Main [INPUT-FILE] -a [OUTPUT-FILE]
+EXAMPLE1:       java main/Main file.graphml -s n3 n7 -> Returns the shortest path between node n3 and n7
 OUTPUT1:        n3(0) → n10(1) → n7(4) -> The numbers in parentheses are the distances from the start node
-EXAMPLE2:       java -jar UASFRAJavaProjekt.jar myxml.graphml -> Returns the network statistics
-EXAMPLE3:       java -jar UASFRAJavaProjekt.jar myxml.graphml -a out.graphml -> Prints all results into the out.graphml file
-EXAMPLE4:       java -jar UASFRAJavaProjekt.jar -b n5 -> Returns the betweeness centrality measure for node 5
+EXAMPLE2:       java main/Main file.graphml -> Returns the network statistics
+EXAMPLE3:       java main/Main file.graphml -a out.graphml -> Prints all results into the out.graphml file
+EXAMPLE4:       java main/Main -b n5 -> Returns the betweeness centrality measure for node 5

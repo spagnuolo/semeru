@@ -1,4 +1,4 @@
 # Semeru
 
-- javac Main/Main.java
-- java Main/Main
+- javac main/Main.java
+- java main/Main

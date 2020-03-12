@@ -8,7 +8,6 @@ import java.io.File;
 import java.io.IOException;
 
 import io.XmlCreator;
-// import io.Parser;
 import io.XmlParser;
 import io.XmlNode;
 import io.XmlEdge;
@@ -106,10 +105,8 @@ public class Main {
         System.out.println(String.valueOf(nodesString));
 
         System.out.println("Edges: ");
-        // StringBuilder edgesString = new StringBuilder();
         for (Edge edge : graph.getEdges()) {
             System.out.println("\t"+edge);
-            // edgesString.append(edge.getId() +" ");
         }
 
         System.out.println("Nodes: Neighbours(Weight)");

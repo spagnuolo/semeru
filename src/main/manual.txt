@@ -10,8 +10,8 @@ OUTPUT-FILE:    A file whose format is: .graphml
 OPTION USAGE:   [--shortestpath]   -> java main/Main [INPUT-FILE] -s [NODE] [NODE]
                 [--betweenness]    -> java main/Main [INPUT-FILE] -b [NODE]
                 [--all]            -> java main/Main [INPUT-FILE] -a [OUTPUT-FILE]
-EXAMPLE1:       java main/Main file.graphml -s n3 n7 -> Returns the shortest path between node n3 and n7
-OUTPUT1:        n3(0) → n10(1) → n7(4) -> The numbers in parentheses are the distances from the start node
-EXAMPLE2:       java main/Main file.graphml -> Returns the network statistics
-EXAMPLE3:       java main/Main file.graphml -a out.graphml -> Prints all results into the out.graphml file
-EXAMPLE4:       java main/Main -b n5 -> Returns the betweeness centrality measure for node 5
+EXAMPLE1:       java main/Main file.graphml -s n3 n7 		-> Returns the shortest path between node n3 and n7
+OUTPUT1:        n3(0) → n10(1) → n7(4)						-> The numbers in parentheses are the distances from the start node
+EXAMPLE2:       java main/Main file.graphml 				-> Returns the network statistics
+EXAMPLE3:       java main/Main in.graphml -a out.graphml 	-> Prints all results into the out.graphml file
+EXAMPLE4:       java main/Main file.graphml -b n5			-> Returns the betweeness centrality measure for node 5
